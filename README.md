@@ -1,6 +1,6 @@
 <h1 align="center"> Website Change Monitor </h1>
 
-<h3 align="center"> A small JavaScript app to monitor for specific changes on a list of given sites</h3>
+<h3 align="center"> A small JavaScript app to monitor for specific changes on a given list of sites</h3>
 <br /> 
 
 ## Features
