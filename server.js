@@ -20,19 +20,32 @@ const sites = [
     element: "show-out-of-stock",
     invert: true,
   },
-  newegg = {
-    name: 'NewEgg',
+  newegg_strix = {
+    name: 'NewEgg(strix)',
     url:
       "https://www.newegg.com/asus-geforce-rtx-3080-rog-strix-rtx3080-o10g-gaming/p/N82E16814126457",
     element: "product_instock:['1']",
     invert: false,
   },
-  amazon = {
-      name: 'Amazon',
+  newegg = {
+    name: 'NewEgg(ftw)',
+    url:
+      "https://www.newegg.com/evga-geforce-rtx-3080-10g-p5-3897-kr/p/N82E16814487518",
+    element: "product_instock:['1']",
+    invert: false,
+  },
+  amazon_strix = {
+      name: 'Amazon(strix)',
       url: 'https://www.amazon.com/dp/B08J6F174Z',
       element: 'In Stock.',
       invert: false
   },
+  amazon_ftw = {
+    name: 'Amazon(ftw)',
+    url: 'https://www.amazon.com/EVGA-10G-P5-3897-KR-GeForce-Technology-Backplate/dp/B08HR3Y5GQ',
+    element: 'In Stock.',
+    invert: false
+},
   bestbuy_strix = {
       name: 'BestBuy(strix)',
       url: 'https://www.bestbuy.com/site/asus-geforce-rtx-3080-10gb-gddr6x-pci-express-4-0-strix-graphics-card-black/6432445.p?skuId=6432445',
@@ -45,6 +58,12 @@ const sites = [
       element: 'Sold Out',
       invert: true
   },
+  evga = {
+    name: 'EVGA',
+    url: 'https://www.evga.com/products/product.aspx?pn=10G-P5-3897-KR',
+    element: 'Out of Stock',
+    invert: true
+  }
 ];
 
 const checkingFrequency = 20 * 1000; //first number represents the checkingFrequency in seconds
