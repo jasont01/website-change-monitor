@@ -1,5 +1,6 @@
 const request = require("request");
 const player = require("play-sound")((opts = {}));
+const open = require("open");
 
 //Main configuration variables
 const checkingFrequency = 20 * 1000; //first number represents the checkingFrequency in seconds
@@ -73,6 +74,8 @@ const intervalId = setInterval(() => {
           console.log(`${site.name}: ${res}`);
           if (res) {
             console.log(`\n ** IN STOCK AT ${site.name} **\n`);
+            // Open URL
+            open(site.url);
             // Alert Notification
             player.play("alarm.mp3", function (err) {
               if (err) throw err;
